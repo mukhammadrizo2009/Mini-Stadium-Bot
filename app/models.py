@@ -3,7 +3,8 @@ from sqlalchemy import (
     Column,
     Integer,
     BigInteger,
-    String
+    String,
+    DateTime
 )
 
 from .database import Base
@@ -17,5 +18,5 @@ class User(Base):
     contact = Column(String(length=25))
     
 
-    created_at = Column(Datatime , default=datetime.now)
-    updated_at = Column(Datatime , onupdate=datetime.now)
+    created_at = Column(DateTime , default=datetime.now)
+    updated_at = Column(DateTime , onupdate=datetime.now)

@@ -14,4 +14,4 @@ url = URL.create(
 
 engine= create_engine(url)
 Base = declarative_base()
-LocalSession =  sessionmaker(bird=engine , autoflush=True , autocommit=False)
+LocalSession =  sessionmaker(bind=engine , autoflush=True , autocommit=False)
