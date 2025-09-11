@@ -11,4 +11,17 @@ class Config:
     DB_PASSWORD = os.getenv("DB_PASSWORD")
     DB_NAME = os.getenv("DB_NAME")
     
+class RegisterStates:
+    NAME = 0
+    CONTACT = 1
+    CONFIRM = 2
+    
+class BookStationStates:
+    DATE = 0 
+    TIME = 1
+    CONFIRM = 2
+    PAYMENT = 3
+    
 config = Config()
+register_states = RegisterStates()
+booking_stadion_states = BookStationStates()
